@@ -32,7 +32,7 @@ const currentTime = new Date();
 
 
   // Check if the browser supports the Geolocation API
-if ('geolocation' in navigator) {
+// if ('geolocation' in navigator) {
     navigator.geolocation.getCurrentPosition(function(position) {
       const latitude = position.coords.latitude;
       const longitude = position.coords.longitude;
@@ -55,9 +55,9 @@ if ('geolocation' in navigator) {
     }, function(error) {
       console.log('Error getting location:', error);
     });
-  } else {
+  /* } else {
     console.log('Geolocation API is not supported by this browser.');
-  }
+  } */
 
   // Get location by API
 fetch("https://ipapi.co/json/")
